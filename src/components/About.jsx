@@ -72,11 +72,11 @@ const About = () => {
 
       <div className="container  bg-slate-100 my-10 text-center p-10 rounded-lg">
         <div className="row">
-          <div class="col-sm-6 mb-3 mb-sm-0">
-            <div class="card rounded-lg">
-              <div class="card-body">
-                <h5 class="card-title text-2xl">Vision</h5>
-                <p class="card-text">
+          <div className="col-sm-6 mb-3 mb-sm-0">
+            <div className="card rounded-lg">
+              <div className="card-body">
+                <h5 className="card-title text-2xl">Vision</h5>
+                <p className="card-text">
                   To be a professionally preferred and trusted organization and
                   to innovate continuously to adopt with the everchanging
                   landscape of assurance and advisory business.
@@ -84,11 +84,11 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div class="col-sm-6">
-            <div class="card rounded-lg">
-              <div class="card-body">
-                <h5 class="card-title text-2xl">Mission</h5>
-                <p class="card-text">
+          <div className="col-sm-6">
+            <div className="card rounded-lg">
+              <div className="card-body">
+                <h5 className="card-title text-2xl">Mission</h5>
+                <p className="card-text">
                   To build a team, our greatest asset, that is competent in
                   every aspect and builds a strong organizational foundation
                   that is unshaken and unaffected through the course of

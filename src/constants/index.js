@@ -79,7 +79,8 @@ export const feedback = [
     id: "feedback-1",
     content:
       "Direct Taxation, System & Internal Audit,  Having comprehensive knowledge of tax laws and regulations",
-    name: "CA GAURAV AGRAWAL ",
+    name: "CA GAURAV ",
+    surname: "AGRAWAL",
     title: "(ACA, ISA, FAFD, B.com)",
     img: gaurav,
     inpractise: "2019",
@@ -88,8 +89,9 @@ export const feedback = [
     id: "feedback-2",
     content:
       "Indirect Taxation, Audit, Understanding financial accounting principles and standards, analyze Financial Data. ",
-    name: "CA VISHAL SHETH ",
-    title: "ACA, B.com",
+    name: "CA VISHAL ",
+    surname: "SHETH",
+    title: "(ACA, B.com)",
     inpractise: "2019",
     img: takshil,
   },
@@ -97,7 +99,8 @@ export const feedback = [
     id: "feedback-3",
     content:
       "Project finance, Valuation, RERA, Having expert knowledge of corporate laws, regulations, and governance practices",
-    name: "CA HARDIK DEVPURA ",
+    name: "CA HARDIK ",
+    surname: "DEVPURA",
     title: "(ACA, M.com)",
     inpractise: "2018",
     img: hardik,

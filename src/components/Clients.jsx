@@ -3,7 +3,7 @@ import styles from "../style";
 
 const Clients = () => (
   <section className={`${styles.flexCenter} my-4`}>
-    <div className={`${styles.flexCenter} flex-wrap w-full`}>
+    <div className={`container ${styles.flexCenter} flex-wrap w-full`}>
       <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-6 mb-6 relative text-center">
         <div className="text-center w-full justify-items-center ">
           <div className="text-4xl  underline underline-offset-4">
@@ -34,7 +34,7 @@ const Clients = () => (
           />
 
           <p
-            className="text-black mb-2"
+            className="text-black text-center mb-2"
             style={{
               display: "flex",
               flexDirection: "column",

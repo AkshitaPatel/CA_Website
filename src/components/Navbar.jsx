@@ -9,19 +9,21 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar">
-      <img src={logo} alt="hoobank" className="w-[200px] h-[32px]" />
+    <nav className="w-full flex justify-between items-center navbar">
+      <img src={logo} alt="DSA & Associates" className="w-[300px] h-[80px]" />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-normal cursor-pointer text-[16px] ${
+            className={`font-normal  cursor-pointer text-[16px] ${
               active === nav.title ? { theme } : "text-cyan-600"
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onClick={() => setActive(nav.title)}
           >
-            <Link to={`/${nav.id}`}>{nav.title}</Link>
+            <Link className="no-underline hover:no-underline" to={`/${nav.id}`}>
+              {nav.title}
+            </Link>
             {/* <a href={`${nav.id}`}>{nav.title}</a> */}
           </li>
         ))}
@@ -44,12 +46,17 @@ const Navbar = () => {
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-poppins font-medium cursor-pointer text-[16px] ${
+                className={`font-poppins font-medium  cursor-pointer text-[16px] ${
                   active === nav.title ? { theme } : "text-black"
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => setActive(nav.title)}
               >
-                <Link to={`/${nav.id}`}>{nav.title}</Link>
+                <Link
+                  className="no-underline hover:no-underline"
+                  to={`/${nav.id}`}
+                >
+                  {nav.title}
+                </Link>
               </li>
             ))}
           </ul>

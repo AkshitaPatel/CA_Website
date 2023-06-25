@@ -1,6 +1,6 @@
 import { theme } from "../constants";
 
-const FeedbackCard = ({ name, title, img, inpractise, content }) => (
+const FeedbackCard = ({ name, surname, title, img, inpractise, content }) => (
   // <div class="card-deck">
   <div className="card">
     <div className="w-full p-3 overflow-hidden h-60">
@@ -12,7 +12,8 @@ const FeedbackCard = ({ name, title, img, inpractise, content }) => (
     </div>
     <div className="card-body">
       <h2 className="card-title font-bold text-3xl" style={theme}>
-        {name}
+        {name} <br />
+        {surname}
       </h2>
       <p className="font-semibold text-lg">{title}</p>
       <br />

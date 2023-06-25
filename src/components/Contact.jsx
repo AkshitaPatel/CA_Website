@@ -24,8 +24,7 @@ const Contact = () => {
       </div>
       <div>
         <iframe
-          className="rounded-lg"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.767825059269!2d73.16641197474917!3d22.286783079696345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc7d21a812849%3A0x8f4b458d00cd1a22!2sRoyal%20Orchid%20Central!5e0!3m2!1sen!2sca!4v1687094076177!5m2!1sen!2sca"
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3691.774425527932!2d73.16603997547568!3d22.28653314339395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjLCsDE3JzExLjUiTiA3M8KwMTAnMDcuMCJF!5e0!3m2!1sen!2sca!4v1687673954482!5m2!1sen!2sca"
           width="500"
           height="400"
           style={{ border: 0 }}

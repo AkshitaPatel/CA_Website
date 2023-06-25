@@ -1,5 +1,6 @@
 import FeedbackCard from "./FeedbackCard";
 import { feedback } from "../constants";
+import { Link } from "react-router-dom";
 const Business = () => (
   <section className="container">
     <div className="container mt-10 text-xl">
@@ -28,7 +29,7 @@ const Business = () => (
       </div>
     </div>
 
-    <div className="container  bg-slate-100 my-10 text-center pt-2 pb-10">
+    <div className="container rounded bg-slate-100 my-10 text-center pt-2 pb-10">
       <h1 className="text-4xl  p-2 mb-3">Expertise</h1>
 
       <div className="row">
@@ -40,6 +41,26 @@ const Business = () => (
                 Leadership of Subject expert's has given us the opportunity to
                 cater to a wide range of industries.
               </p>
+              <Link
+                to="/services"
+                className="inline-flex items-center rounded-lg px-3 py-2 text-sm font-medium text-center text-white mt-2"
+                style={{ background: "#00538C" }}
+              >
+                Read more
+                <svg
+                  aria-hidden="true"
+                  className="w-4 h-4 ml-2 -mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>
+              </Link>
             </div>
           </div>
         </div>
@@ -51,6 +72,26 @@ const Business = () => (
                 Our goal is to provide you with everything you need in one
                 place, making it convenient and hassle-free for you.
               </p>
+              <Link
+                to="/services"
+                className="inline-flex items-center rounded-lg mt-2 px-3 py-2 text-sm font-medium text-center text-white "
+                style={{ background: "#00538C" }}
+              >
+                Read more
+                <svg
+                  aria-hidden="true"
+                  className="w-4 h-4 ml-2 -mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>
+              </Link>
             </div>
           </div>
         </div>
@@ -58,7 +99,7 @@ const Business = () => (
     </div>
 
     <div>
-      <h1 className="text-4xl  p-2 mb-3">Meet Our Partners</h1>
+      <h1 className="text-4xl text-center p-2 mb-3">Meet Our Partners</h1>
       <div className="container text-center card-deck m-3">
         {feedback.map((card) => (
           <FeedbackCard key={card.id} {...card} />
@@ -69,28 +110,3 @@ const Business = () => (
 );
 
 export default Business;
-
-// const FeatureCard = ({ icon, title, content, index }) => (
-//   <div
-//     className={`flex flex-row p-6 rounded-[20px] ${
-//       index !== features.length - 1 ? "mb-6" : "mb-0"
-//     } feature-card`}
-//   >
-//     <div
-//       className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}
-//     >
-//       <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain" />
-//     </div>
-//     <div className="flex-1 flex flex-col ml-3">
-//       <h4
-//         className="font-semibold text-[18px] leading-[23.4px] mb-1"
-//         styles={theme}
-//       >
-//         {title}
-//       </h4>
-//       <p className=" font-normal text-black text-[16px] leading-[24px]">
-//         {content}
-//       </p>
-//     </div>
-//   </div>
-// );
