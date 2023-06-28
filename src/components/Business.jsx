@@ -1,6 +1,7 @@
 import FeedbackCard from "./FeedbackCard";
 import { feedback } from "../constants";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 const Business = () => (
   <section className="container">
     <div className="container text-justify mt-10 text-xl">
@@ -42,16 +43,9 @@ const Business = () => (
                 cater to a wide range of industries.
               </p>
               <Link
-                to="/services"
+                to="/services#industries"
                 className="inline-flex items-center rounded-lg px-3 py-2 text-sm font-medium text-center text-white mt-2"
                 style={{ background: "#00538C" }}
-                onClick={() => {
-                  window.scroll({
-                    top: 0,
-                    left: 0,
-                    behavior: "smooth",
-                  });
-                }}
               >
                 Read more
                 <svg
