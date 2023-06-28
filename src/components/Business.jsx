@@ -45,6 +45,13 @@ const Business = () => (
                 to="/services"
                 className="inline-flex items-center rounded-lg px-3 py-2 text-sm font-medium text-center text-white mt-2"
                 style={{ background: "#00538C" }}
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
               >
                 Read more
                 <svg
@@ -76,6 +83,13 @@ const Business = () => (
                 to="/services"
                 className="inline-flex items-center rounded-lg mt-2 px-3 py-2 text-sm font-medium text-center text-white "
                 style={{ background: "#00538C" }}
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
               >
                 Read more
                 <svg
