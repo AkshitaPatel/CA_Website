@@ -3,13 +3,13 @@ import { feedback } from "../constants";
 import { Link } from "react-router-dom";
 const Business = () => (
   <section className="container">
-    <div className="container mt-10 text-xl">
-      DSA & ASSOCIATES is a full service, multi-disciplinary professional
-      services firm. The organization has carved a niche for itself by providing
-      tailored solutions as per client's specific needs, adopting customer
-      centric approach.{" "}
+    <div className="container text-justify mt-10 text-xl">
+      <span style={{ font: "#00538C" }}> DSA & ASSOCIATES </span>is a full
+      service, multi-disciplinary professional services firm. The organization
+      has carved a niche for itself by providing tailored solutions as per
+      client's specific needs, adopting customer centric approach.{" "}
     </div>
-    <div className="container row">
+    <div className="container row text-justify">
       <div className="container col mt-10 text-xl">
         DSA & ASSOCIATES offers array of diversified, specialized, and
         professional services for broad spectrum of sectors including Healthcare
@@ -18,7 +18,7 @@ const Business = () => (
         Estate, Pharmaceutical, Import/ Export and more.
       </div>
 
-      <div className="container col  mt-10 text-xl">
+      <div className="container col text-justify mt-10 text-xl">
         The leadership team comprises of CAs and subject experts with vast
         experience in related fields. The dynamic and competent team members
         have been our biggest assets.

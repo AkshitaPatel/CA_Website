@@ -7,7 +7,7 @@ const Footer = () => (
     style={{ background: "#00538C" }}
   >
     <p className=" font-normal text-center text-[18px] leading-[27px] text-white">
-      Copyright Ⓒ 2022 DSA & Associates. All Rights Reserved.
+      Copyright Ⓒ 2020 DSA & Associates. All Rights Reserved.
     </p>
   </section>
 );

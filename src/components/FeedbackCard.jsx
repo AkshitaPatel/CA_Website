@@ -20,7 +20,7 @@ const FeedbackCard = ({ name, surname, title, img, inpractise, content }) => (
       <p className="card-text">{content}</p>
       <br />
 
-      <p className="card-text">Inpractice since {inpractise}</p>
+      <p className="card-text">In practice since {inpractise}</p>
     </div>
   </div>
 
