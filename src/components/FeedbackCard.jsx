@@ -15,7 +15,7 @@ const FeedbackCard = ({ name, surname, title, img, inpractise, content }) => (
         {name} <br />
         {surname}
       </h2>
-      <p className="font-semibold text-lg">{title}</p>
+      <p className="font-semibold text-center text-lg">{title}</p>
       <br />
       <p className="card-text">{content}</p>
       <br />

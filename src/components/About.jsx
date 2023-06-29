@@ -17,7 +17,7 @@ const About = () => {
           Who we are!
         </h2>
       </div>
-      <div className="container px-20 mb-5">
+      <div className="container px-20 text-justify mb-5">
         <p>
           <b>DSA & ASSOCIATES</b> is a full service, multi-disciplinary
           professional services firm. The organization has carved a niche for
