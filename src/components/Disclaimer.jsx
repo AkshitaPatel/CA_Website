@@ -1,10 +1,8 @@
-import styles from "../style";
-
 const Disclaimer = ({ onDismiss }) => {
   return (
-    <div className="disclaimer rounded-lg z-0">
+    <div className="disclaimer rounded-lg z-10 p-4 md:w-1/2 mx-auto">
       <h1 className="text-center text-2xl mb-2">Disclaimer</h1>
-      <p>
+      <p className="text-sm">
         The Institute of Chartered Accountants of India does not permit
         advertisement or solicitation by Chartered Accountants in any form or
         manner. By accessing this website, www.dsaandassociates.com, you
@@ -24,11 +22,12 @@ const Disclaimer = ({ onDismiss }) => {
         {/* Add additional content and styling as needed */}
       </p>
 
-      <div className="text-center">
-        <button onClick={onDismiss}>
-          <p className=" mt-2 bg-blue-600 font-medium text-[18px] text-white px-3 py-1 rounded-lg">
-            I agree
-          </p>
+      <div className="text-center mt-4">
+        <button
+          onClick={onDismiss}
+          className="bg-blue-600 text-white px-4 py-2 rounded-lg"
+        >
+          I agree
         </button>
       </div>
     </div>
