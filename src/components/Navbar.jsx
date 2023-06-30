@@ -8,6 +8,10 @@ const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
 
+  const handleNavLinkClick = () => {
+    setToggle(false);
+  };
+
   return (
     <nav className="w-full flex justify-between items-center navbar">
       <img src={logo} alt="DSA & Associates" className="w-[300px] h-[80px]" />
@@ -19,7 +23,10 @@ const Navbar = () => {
             className={`font-normal  cursor-pointer text-[16px] ${
               active === nav.title ? { theme } : "text-cyan-600"
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
-            onClick={() => setActive(nav.title)}
+            onClick={() => {
+              setActive(nav.title);
+              handleNavLinkClick();
+            }}
           >
             <Link className="no-underline hover:no-underline" to={`/${nav.id}`}>
               {nav.title}
@@ -49,7 +56,10 @@ const Navbar = () => {
                 className={`font-poppins font-medium  cursor-pointer text-[16px] ${
                   active === nav.title ? { theme } : "text-black"
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
-                onClick={() => setActive(nav.title)}
+                onClick={() => {
+                  setActive(nav.title);
+                  handleNavLinkClick();
+                }}
               >
                 <Link
                   className="no-underline hover:no-underline"
