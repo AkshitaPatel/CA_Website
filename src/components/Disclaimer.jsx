@@ -1,5 +1,28 @@
+import React, { useEffect, useState } from "react";
+
 const Disclaimer = ({ onDismiss }) => {
-  return (
+  const [showDisclaimer, setShowDisclaimer] = useState(true);
+
+  useEffect(() => {
+    const dismissed = localStorage.getItem("disclaimerDismissed");
+    const today = new Date().toDateString();
+
+    if (dismissed && dismissed === today) {
+      setShowDisclaimer(false);
+    } else {
+      setShowDisclaimer(true);
+    }
+  }, []);
+
+  const handleDismiss = () => {
+    localStorage.setItem("disclaimerDismissed", new Date().toDateString());
+    setShowDisclaimer(false);
+    if (onDismiss) {
+      onDismiss();
+    }
+  };
+
+  return showDisclaimer ? (
     <div className="disclaimer rounded-lg z-10 p-4 md:w-1/2 mx-auto max-h-[70vh] overflow-y-auto">
       <h1 className="text-center text-2xl mb-2">Disclaimer</h1>
       <p className="text-sm">
@@ -24,14 +47,14 @@ const Disclaimer = ({ onDismiss }) => {
 
       <div className="text-center mt-4">
         <button
-          onClick={onDismiss}
+          onClick={handleDismiss}
           className="bg-blue-600 text-white px-4 py-2 rounded-lg"
         >
           I agree
         </button>
       </div>
     </div>
-  );
+  ) : null;
 };
 
 export default Disclaimer;
